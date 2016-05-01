@@ -1,14 +1,14 @@
 <?php
-namespace Fc\Faqs\Block;
+namespace Arkade\Faq\Block;
 
-use Fc\Faqs\Api\Data\FaqInterface;
-use Fc\Faqs\Model\ResourceModel\Faq\Collection as FaqCollection;
+use Arkade\Faq\Api\Data\FaqInterface;
+use Arkade\Faq\Model\ResourceModel\Faq\Collection as FaqCollection;
 
 class FaqsList extends \Magento\Framework\View\Element\Template implements
     \Magento\Framework\DataObject\IdentityInterface
 {
     /**
-     * @var \Fc\Faqs\Model\ResourceModel\Faq\CollectionFactory
+     * @var \Arkade\Faq\Model\ResourceModel\Faq\CollectionFactory
      */
     protected $_faqCollectionFactory;
 
@@ -16,12 +16,12 @@ class FaqsList extends \Magento\Framework\View\Element\Template implements
      * Construct
      *
      * @param \Magento\Framework\View\Element\Template\Context $context
-     * @param \Fc\Faqs\Model\ResourceModel\Faq\CollectionFactory $faqCollectionFactory,
+     * @param \Arkade\Faq\Model\ResourceModel\Faq\CollectionFactory $faqCollectionFactory,
      * @param array $data
      */
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-        \Fc\Faqs\Model\ResourceModel\Faq\CollectionFactory $faqCollectionFactory,
+        \Arkade\Faq\Model\ResourceModel\Faq\CollectionFactory $faqCollectionFactory,
         array $data = []
     ) {
         parent::__construct($context, $data);
@@ -29,7 +29,7 @@ class FaqsList extends \Magento\Framework\View\Element\Template implements
     }
 
     /**
-     * @return \Fc\Faqs\Model\ResourceModel\Faq\Collection
+     * @return \Arkade\Faq\Model\ResourceModel\Faq\Collection
      */
     public function getFaqs()
     {
@@ -62,7 +62,7 @@ class FaqsList extends \Magento\Framework\View\Element\Template implements
      */
     public function getIdentities()
     {
-        return [\Fc\Faqs\Model\Faq::CACHE_TAG . '_' . 'list'];
+        return [\Arkade\Faq\Model\Faq::CACHE_TAG . '_' . 'list'];
     }
 
 }

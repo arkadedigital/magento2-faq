@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Api\Data;
+namespace Arkade\Faq\Api\Data;
 
 interface FaqInterface
 {
@@ -76,7 +76,7 @@ interface FaqInterface
      * Set ID
      *
      * @param int $id
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setId($id);
 
@@ -84,7 +84,7 @@ interface FaqInterface
      * Set Identifier
      *
      * @param string $faq_identifier
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setFaqIdentifier($faq_identifier);
 
@@ -92,7 +92,7 @@ interface FaqInterface
      * Set title
      *
      * @param string $title
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setTitle($title);
 
@@ -100,14 +100,14 @@ interface FaqInterface
      * Set content
      *
      * @param string $content
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setContent($content);
 
     /**
      * Set sort order
      * @param int $sortOrder
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
 
     public function setSortOrder($sortOrder);
@@ -116,7 +116,7 @@ interface FaqInterface
      * Set creation time
      *
      * @param string $creationTime
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setCreationTime($creationTime);
 
@@ -124,7 +124,7 @@ interface FaqInterface
      * Set update time
      *
      * @param string $updateTime
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setUpdateTime($updateTime);
 
@@ -132,7 +132,7 @@ interface FaqInterface
      * Set is active
      *
      * @param int|bool $isActive
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setIsActive($isActive);
 }

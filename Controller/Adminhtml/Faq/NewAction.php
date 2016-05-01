@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Controller\Adminhtml\Faq;
+namespace Arkade\Faq\Controller\Adminhtml\Faq;
 
 class NewAction extends \Magento\Backend\App\Action
 {
@@ -25,7 +25,7 @@ class NewAction extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Fc_Faqs::save');
+        return $this->_authorization->isAllowed('Arkade_Faq::save');
     }
 
     /**

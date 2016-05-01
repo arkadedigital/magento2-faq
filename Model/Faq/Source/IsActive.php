@@ -1,19 +1,19 @@
 <?php
-namespace Fc\Faqs\Model\Faq\Source;
+namespace Arkade\Faq\Model\Faq\Source;
 
 class IsActive implements \Magento\Framework\Data\OptionSourceInterface
 {
     /**
-     * @var \Fc\Faqs\Model\Faq
+     * @var \Arkade\Faq\Model\Faq
      */
     protected $faq;
 
     /**
      * Constructor
      *
-     * @param \Fc\Faqs\Model\Faq $faq
+     * @param \Arkade\Faq\Model\Faq $faq
      */
-    public function __construct(\Fc\Faqs\Model\Faq $faq)
+    public function __construct(\Arkade\Faq\Model\Faq $faq)
     {
         $this->faq = $faq;
     }

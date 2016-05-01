@@ -372,7 +372,7 @@
         </column>
         <column name="is_active">
             <argument name="data" xsi:type="array">
-                <item name="options" xsi:type="object">Fc\Faqs\Model\Faq\Source\IsActive</item>
+                <item name="options" xsi:type="object">Arkade\Faq\Model\Faq\Source\IsActive</item>
                 <item name="config" xsi:type="array">
                     <item name="filter" xsi:type="string">select</item>
                     <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/select</item>
@@ -415,7 +415,7 @@
                 </item>
             </argument>
         </column>
-        <actionsColumn name="actions" class="Fc\Faqs\Ui\Component\Listing\Column\FaqActions">
+        <actionsColumn name="actions" class="Arkade\Faq\Ui\Component\Listing\Column\FaqActions">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="resizeEnabled" xsi:type="boolean">false</item>

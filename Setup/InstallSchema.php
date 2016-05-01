@@ -1,4 +1,4 @@
-<?php namespace Fc\Faqs\Setup;
+<?php namespace Arkade\Faq\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -21,7 +21,7 @@ class InstallSchema implements InstallSchemaInterface
         $installer->startSetup();
 
         $table = $installer->getConnection()
-            ->newTable($installer->getTable('fc_faqs_faq'))
+            ->newTable($installer->getTable('arkade_faq_faq'))
             ->addColumn(
                 'faq_id',
                 Table::TYPE_SMALLINT,

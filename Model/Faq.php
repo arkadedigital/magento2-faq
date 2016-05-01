@@ -1,6 +1,6 @@
-<?php namespace Fc\Faqs\Model;
+<?php namespace Arkade\Faq\Model;
 
-use Fc\Faqs\Api\Data\FaqInterface;
+use Arkade\Faq\Api\Data\FaqInterface;
 use Magento\Framework\DataObject\IdentityInterface;
 
 class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface, IdentityInterface
@@ -34,7 +34,7 @@ class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface
      */
     protected function _construct()
     {
-        $this->_init('Fc\Faqs\Model\ResourceModel\Faq');
+        $this->_init('Arkade\Faq\Model\ResourceModel\Faq');
     }
 
     /**
@@ -143,7 +143,7 @@ class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface
      * Set ID
      *
      * @param int $id
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setId($id)
     {
@@ -154,7 +154,7 @@ class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface
      * Set URL Key
      *
      * @param string $faq_identifier
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setFaqIdentifier($faq_identifier)
     {
@@ -165,7 +165,7 @@ class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface
      * Set title
      *
      * @param string $title
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setTitle($title)
     {
@@ -176,7 +176,7 @@ class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface
      * Set content
      *
      * @param string $content
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setContent($content)
     {
@@ -185,7 +185,7 @@ class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface
 
     /**
      * @param string $sort_order
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
 
     public function setSortOrder($sort_order) {
@@ -196,7 +196,7 @@ class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface
      * Set creation time
      *
      * @param string $creation_time
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setCreationTime($creation_time)
     {
@@ -207,7 +207,7 @@ class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface
      * Set update time
      *
      * @param string $update_time
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setUpdateTime($update_time)
     {
@@ -218,7 +218,7 @@ class Faq extends \Magento\Framework\Model\AbstractModel implements FaqInterface
      * Set is active
      *
      * @param int|bool $is_active
-     * @return \Fc\Faqs\Api\Data\FaqInterface
+     * @return \Arkade\Faq\Api\Data\FaqInterface
      */
     public function setIsActive($is_active)
     {

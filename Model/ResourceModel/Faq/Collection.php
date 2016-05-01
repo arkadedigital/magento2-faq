@@ -1,4 +1,4 @@
-<?php namespace Fc\Faqs\Model\ResourceModel\Faq;
+<?php namespace Arkade\Faq\Model\ResourceModel\Faq;
 
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
@@ -14,7 +14,7 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
      */
     protected function _construct()
     {
-        $this->_init('Fc\Faqs\Model\Faq', '\Fc\Faqs\Model\ResourceModel\Faq');
+        $this->_init('Arkade\Faq\Model\Faq', '\Arkade\Faq\Model\ResourceModel\Faq');
     }
 
 }

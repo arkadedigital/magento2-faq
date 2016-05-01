@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Block\Adminhtml\Faq\Edit;
+namespace Arkade\Faq\Block\Adminhtml\Faq\Edit;
 
 /**
  * Adminhtml faq edit form
@@ -50,7 +50,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
      */
     protected function _prepareForm()
     {
-        /** @var \Fc\Faqs\Model\Faq $model */
+        /** @var \Arkade\Faq\Model\Faq $model */
         $model = $this->_coreRegistry->registry('faqs_faq');
 
         /** @var \Magento\Framework\Data\Form $form */

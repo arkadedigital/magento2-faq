@@ -4,10 +4,10 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="Magento_Backend::content">
-                    <resource id="Fc_Faqs::faq_content" title="Faq" sortOrder="10" >
-                        <resource id="Fc_Faqs::faq" title="Faqs" sortOrder="40">
-                            <resource id="Fc_Faqs::save" title="Save Faq" sortOrder="10" />
-                            <resource id="Fc_Faqs::faq_delete" title="Delete Faq" sortOrder="20" />
+                    <resource id="Arkade_Faq::faq_content" title="Faq" sortOrder="10" >
+                        <resource id="Arkade_Faq::faq" title="Faqs" sortOrder="40">
+                            <resource id="Arkade_Faq::save" title="Save Faq" sortOrder="10" />
+                            <resource id="Arkade_Faq::faq_delete" title="Delete Faq" sortOrder="20" />
                         </resource>
                     </resource>
                 </resource>

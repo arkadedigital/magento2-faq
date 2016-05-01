@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Block\Adminhtml\Faq;
+namespace Arkade\Faq\Block\Adminhtml\Faq;
 
 class Edit extends \Magento\Backend\Block\Widget\Form\Container
 {
@@ -32,12 +32,12 @@ class Edit extends \Magento\Backend\Block\Widget\Form\Container
     protected function _construct()
     {
         $this->_objectId = 'faq_id';
-        $this->_blockGroup = 'Fc_Faqs';
+        $this->_blockGroup = 'Arkade_Faq';
         $this->_controller = 'adminhtml_faq';
 
         parent::_construct();
 
-        if ($this->_isAllowedAction('Fc_Faqs::save')) {
+        if ($this->_isAllowedAction('Arkade_Faq::save')) {
             $this->buttonList->update('save', 'label', __('Save Faq'));
             $this->buttonList->add(
                 'saveandcontinue',
@@ -56,7 +56,7 @@ class Edit extends \Magento\Backend\Block\Widget\Form\Container
             $this->buttonList->remove('save');
         }
 
-        if ($this->_isAllowedAction('Fc_Faqs::faq_delete')) {
+        if ($this->_isAllowedAction('Arkade_Faq::faq_delete')) {
             $this->buttonList->update('delete', 'label', __('Delete Faq'));
         } else {
             $this->buttonList->remove('delete');

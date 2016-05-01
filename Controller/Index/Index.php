@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Controller\Index;
+namespace Arkade\Faq\Controller\Index;
 
 use \Magento\Framework\App\Action\Action;
 

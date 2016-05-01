@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Controller\Adminhtml\Faq;
+namespace Arkade\Faq\Controller\Adminhtml\Faq;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
@@ -33,7 +33,7 @@ class Index extends \Magento\Backend\App\Action
     {
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('Fc_Faqs::faq');
+        $resultPage->setActiveMenu('Arkade_Faq::faq');
         $resultPage->addBreadcrumb(__('Faqs'), __('Faqs'));
         $resultPage->addBreadcrumb(__('Manage Faqs'), __('Manage Faqs'));
         $resultPage->getConfig()->getTitle()->prepend(__('Faqs'));
@@ -48,7 +48,7 @@ class Index extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Fc_Faqs::faq');
+        return $this->_authorization->isAllowed('Arkade_Faq::faq');
     }
 
 

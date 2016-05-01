@@ -1,6 +1,6 @@
 {
-    "name": "fc/faqs",
-    "description": "A simple faq module.",
+    "name": "arkade/magento2-faq",
+    "description": "The best FAQ module for Magento 2.",
     "type": "magento2-module",
     "license": [
         "OSL-3.0",
@@ -11,7 +11,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Fc\\Faqs\\": ""
+            "Arkade\\Faq\\": ""
         }
     }
 }

@@ -1,7 +1,7 @@
-<?php /** @var \Fc\Faqs\Block\FaqsList $block */ ?>
+<?php /** @var \Arkade\Faq\Block\FaqsList $block */ ?>
 <h1><?php echo __('Frequently Asked Questions') ?></h1>
 <div id="faqs-faq-list">
-    <?php /** @var \Fc\Faqs\Model\Faq $faq */ ?>
+    <?php /** @var \Arkade\Faq\Model\Faq $faq */ ?>
     <?php foreach ($block->getFaqs() as $faq): ?>
         <div data-role="collapsible">
             <div data-role="trigger">

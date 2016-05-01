@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Model\ResourceModel;
+namespace Arkade\Faq\Model\ResourceModel;
 
 /**
  * Faq mysql resource
@@ -35,7 +35,7 @@ class Faq extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      */
     protected function _construct()
     {
-        $this->_init('fc_faqs_faq', 'faq_id');
+        $this->_init('arkade_faq_faq', 'faq_id');
     }
 
     /**
@@ -94,7 +94,7 @@ class Faq extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
      *
      * @param string $field
      * @param mixed $value
-     * @param \Fc\Faq\Model\Faq $object
+     * @param \Arkade\Faq\Model\Faq $object
      * @return \Zend_Db_Select
      */
     protected function _getLoadSelect($field, $value, $object)

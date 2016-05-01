@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="content">
-            <block class="Fc\Faqs\Block\FaqsList" name="faqs.list" template="Fc_Faqs::list.phtml" />
+            <block class="Arkade\Faq\Block\FaqsList" name="faqs.list" template="Arkade_Faq::list.phtml" />
         </referenceContainer>
     </body>
 </page>

@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Controller\Adminhtml\Faq;
+namespace Arkade\Faq\Controller\Adminhtml\Faq;
 
 use Magento\Backend\App\Action;
 
@@ -37,7 +37,7 @@ class Edit extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Fc_Faqs::save');
+        return $this->_authorization->isAllowed('Arkade_Faq::save');
     }
 
     /**
@@ -50,7 +50,7 @@ class Edit extends \Magento\Backend\App\Action
         // load layout, set active menu and breadcrumbs
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('FC_Faqs::faq')
+        $resultPage->setActiveMenu('Arkade_Faq::faq')
             ->addBreadcrumb(__('Faq'), __('Faq'))
             ->addBreadcrumb(__('Manage Faqs'), __('Manage Faqs'));
         return $resultPage;
@@ -65,7 +65,7 @@ class Edit extends \Magento\Backend\App\Action
     public function execute()
     {
         $id = $this->getRequest()->getParam('faq_id');
-        $model = $this->_objectManager->create('Fc\Faqs\Model\Faq');
+        $model = $this->_objectManager->create('Arkade\Faq\Model\Faq');
 
         if ($id) {
             $model->load($id);

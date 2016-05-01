@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Controller\Adminhtml\Faq;
+namespace Arkade\Faq\Controller\Adminhtml\Faq;
 
 use Magento\Backend\App\Action;
 use Magento\TestFramework\ErrorLog\Logger;
@@ -20,7 +20,7 @@ class Save extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Fc_Faqs::save');
+        return $this->_authorization->isAllowed('Arkade_Faq::save');
     }
 
     /**
@@ -37,8 +37,8 @@ class Save extends \Magento\Backend\App\Action
         /** @var \Magento\Backend\Model\View\Result\Redirect $resultRedirect */
         $resultRedirect = $this->resultRedirectFactory->create();
         if ($data) {
-            /** @var \Fc\Faqs\Model\Faq $model */
-            $model = $this->_objectManager->create('Fc\Faqs\Model\Faq');
+            /** @var \Arkade\Faq\Model\Faq $model */
+            $model = $this->_objectManager->create('Arkade\Faq\Model\Faq');
 
             $id = $this->getRequest()->getParam('faq_id');
             if ($id) {

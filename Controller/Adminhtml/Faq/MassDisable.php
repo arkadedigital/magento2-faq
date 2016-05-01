@@ -1,9 +1,9 @@
 <?php
-namespace Fc\Faqs\Controller\Adminhtml\Faq;
+namespace Arkade\Faq\Controller\Adminhtml\Faq;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Ui\Component\MassAction\Filter;
-use Fc\Faqs\Model\ResourceModel\Faq\CollectionFactory;
+use Arkade\Faq\Model\ResourceModel\Faq\CollectionFactory;
 use Magento\Framework\Controller\ResultFactory;
 
 /**

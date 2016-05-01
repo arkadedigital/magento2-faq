@@ -1,5 +1,5 @@
 <?php
-namespace Fc\Faqs\Controller\Adminhtml\Faq;
+namespace Arkade\Faq\Controller\Adminhtml\Faq;
 
 use Magento\Backend\App\Action;
 use Magento\TestFramework\ErrorLog\Logger;
@@ -12,7 +12,7 @@ class Delete extends \Magento\Backend\App\Action
      */
     protected function _isAllowed()
     {
-        return $this->_authorization->isAllowed('Fc_Faqs::delete');
+        return $this->_authorization->isAllowed('Arkade_Faq::delete');
     }
 
     /**
@@ -27,7 +27,7 @@ class Delete extends \Magento\Backend\App\Action
         $resultRedirect = $this->resultRedirectFactory->create();
         if ($id) {
             try {
-                $model = $this->_objectManager->create('Fc\Faqs\Model\Faq');
+                $model = $this->_objectManager->create('Arkade\Faq\Model\Faq');
                 $model->load($id);
                 $model->delete();
                 $this->messageManager->addSuccess(__('The faq has been deleted.'));
