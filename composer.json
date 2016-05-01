@@ -2,10 +2,7 @@
     "name": "arkade/magento2-faq",
     "description": "The best FAQ module for Magento 2.",
     "type": "magento2-module",
-    "license": [
-        "OSL-3.0",
-        "AFL-3.0"
-    ],
+    "license": "OSL-3.0",
     "autoload": {
         "files": [
             "registration.php"
